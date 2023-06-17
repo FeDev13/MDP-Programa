@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Open+Sans&family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    background: linear-gradient(0.25turn, #e77c70, #de6060, #f31313);
+}
+/* Mobile first*/
+
+header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 10px;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+header nav a{
+    display: none;
+}
+header nav span{
+    display: block;
+    background-color: #fff;
+    height: 4px;
+    width: 1.5rem;
+    border-radius: 8px;
+    margin: 0.1rem 2rem;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    border-radius: 5px;
+    padding: 3rem 0 3rem 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    
+}
+form label{
+    margin-top: 2rem;
+}
+form input{
+    margin-top: 2rem;
+    width: 50%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: #f31313 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+form textarea{
+    margin-top: 2rem;
+    outline: none;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    background-color: #f31313;
+    color: #fff;
+    padding: 0.3rem;
+    width: 50%;
+    border-radius: 5px;
+    margin:2rem auto 0 auto; 
+    cursor: pointer;
+}
+
+.info-wrapper{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+.info-wrapper ul{
+    list-style: none;
+    padding: 1rem;
+}
+.pin-location{
+    width: 5%;
+}
+
+/* Desktop version*/
+@media screen and (min-width:700px){
+    header nav span{
+        display: none;
+    }
+    header nav a{
+        display: inline;
+        text-decoration: none;
+        color: #fff;
+        margin: 1rem;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
