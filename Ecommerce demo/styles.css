@@ -7,15 +7,36 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-@media(max-width:800px){
+/* animacion */
+
+@keyframes slider {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.titulo{
+    animation-name: slider;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+/* fin animacion */
+
+@media (max-width:800px){
     .start a {
         display: none;
     }
     .container{
         flex-wrap: wrap;
     }
-
 }
+
 header{
     display: flex;
     justify-content: space-between;
@@ -58,11 +79,19 @@ h2{
     background-color: cadetblue;
     border-radius: 4px;
     border: 1px solid black;
+    transition: .5s;
 }
+
+/* efecto sobre la card con rotate*/
+.cards:hover{
+    transform: rotateY(180deg);
+}
+
 .cards img{
     width: 100%;
     height: auto;
 }
+
 
 footer{
     height: 10rem;
