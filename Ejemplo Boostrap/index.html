@@ -3,23 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Ejemplo Bootstrap</h1>
+    <nav class="nav bg-success">
+      <a href="" class="nav-link text-white">Login</a>
+      <a href="" class="nav-link text-white">Carrito</a>
+    </nav>
+    <div class="container-fluid border border-black mt-5">
+      <h1 class="text-center">Bootstrap</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio cumque,
-        assumenda laudantium sunt sed distinctio molestiae. Mollitia esse eius
-        consequatur, optio aliquam id omnis cumque velit ab, ducimus excepturi
-        quasi?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, quasi.
+        Cumque doloremque delectus est labore vero nam ducimus tenetur,
+        aspernatur odio voluptatibus maiores maxime asperiores at quibusdam quod
+        reiciendis dolorum!
       </p>
+      <button class="btn btn-success" id="butn">Aca</button>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-4 bg-success text-white mt-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          voluptatem amet, aliquam quasi inventore tempore vitae illo? Quia
+          rerum fugiat vel ratione ad! Itaque, vitae beatae. Amet vel similique
+          id?
+        </p>
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 bg-primary text-white mt-3">
+        Div 2
+      </div>
+      <div class="col-sm-3 col-md-6 col-lg-4 bg-danger text-white mt-3">
+        Div 3
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 bg-warning text-white mt-3">
+        Div 4
+      </div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
