@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-12">
+          <nav class="navbar bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+              <a href="" class="navbar-brand text-white">Logo</a>
+              <button
+                class="navbar-toggler bg-white"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-bar-item">
+                    <a class="nav-link text-white" href="">Notebooks</a>
+                  </li>
+                  <li class="nav-bar-item">
+                    <a class="nav-link text-white" href="">Celulares</a>
+                  </li>
+                  <li class="nav-bar-item">
+                    <a class="nav-link text-white" href="">Consolas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+      <div class="col-4 bg-dark text-white">
+        <div aria-label="breadcrumb" class="bg-dark my-5">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="breadcrumb-item active text-white" aria-current="page">
+              Catalogo
+            </li>
+          </ol>
+        </div>
+        <div class="accordion" id="ejemplo">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="tit">
+              <button
+                id="boton"
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Categoria
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="ejemplo"
+            >
+              <div class="accordion-body">
+                <ul>
+                  <li>Noteboks</li>
+                  <li>Celulares</li>
+                  <li>Consolas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 bg-">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <img
+              src="https://http2.mlstatic.com/D_Q_NP_841787-MLA44484414455_012021-O.webp"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="card mt-5">
+              <div class="card-title">
+                <h5>PLaystation 5</h5>
+              </div>
+              <div class="card-body">
+                <p>Descripcion</p>
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-glyphs/30/like--v1.png"
+                  alt="like--v1"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/fluency/48/star.png"
+                  alt="star"
+                />
+              </div>
+              <div class="card-footer">
+                <button
+                  class="btn btn-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ejemploModal"
+                >
+                  Comprar
+                </button>
+                <button class="btn btn-secondary">Mas informacion</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <img
+              src="https://http2.mlstatic.com/D_Q_NP_841787-MLA44484414455_012021-O.webp"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="card">
+              <div class="card-title">
+                <h5>PLaystation 5</h5>
+              </div>
+              <div class="card-body">
+                <p>Descripcion</p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-success">Comprar</button>
+                <button class="btn btn-secondary">Mas informacion</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="ejemploModal"
+      tabindex="-1"
+      aria-labelledby="ejemploModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title">Desea comprar el producto?</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              arial-label="Close"
+            ></button>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                vitae voluptas voluptatum numquam, earum iure facilis, explicabo
+                at quod officia perferendis nobis fugit. Doloremque praesentium
+                cumque velit unde molestias quis?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--    Fin Modal -->
+    <footer class="text-center bg-light">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="d-none d-lg-block">
+          <span>Nuestras redes sociales</span>
+        </div>
+        <div><a href="">Logo</a></div>
+        <div><a href="">Logo</a></div>
+        <div><a href="">Logo</a></div>
+      </section>
+      <section>
+        <div class="container text-center">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laborum blanditiis facere ducimus qui, possimus aperiam
+                  corrupti cupiditate autem dolorum delectus nemo laboriosam
+                  adipisci laudantium, natus molestiae rerum ex? Dolorem,
+                  consequuntur?
+                </p>
+              </h6>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <li class="nav-link">Notebooks</li>
+              <li class="nav-link">Celulares</li>
+              <li class="nav-link">Consolas</li>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <li>Mar del Plata</li>
+              <li>dadas@dasdsa.com</li>
+              <li>copyrigth 2023 MDP Programa</li>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                impedit quas hic officiis quasi, eius ea, tenetur doloribus
+                saepe quos similique voluptas nesciunt. Sed, optio facere
+                reiciendis ea excepturi quo?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
