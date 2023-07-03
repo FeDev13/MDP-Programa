@@ -1,0 +1,48 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+
+
+
+body {
+    background-color: rgb(255, 191, 14);
+    font-family: 'Geologica', sans-serif;
+    font-size: 10px;
+    
+
+}
+
+.input_div {
+    margin: 20px;
+    align-items: center;
+   
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    
+}
+
+.container form .input_div label {
+    margin-right: 70px;
+}
+
+.container form .input_div input {
+   float: right;
+    width: 50%;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: yellow;
+    padding: 8px;
+}
+
+.container form .input_div input:focus{
+    border-style: solid;
+    border-color: yellowgreen;
+    border-width: thick;
+}
+

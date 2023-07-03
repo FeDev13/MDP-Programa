@@ -2,3 +2,6 @@
     width: 50%;
     border: none;
 }
+.card button {
+    margin: 1rem;
+}

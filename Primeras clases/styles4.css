@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: bisque;
+    width: 100%;
+}
+
+section{
+    background-color: aquamarine;
+    width: 70%;
+}
+
+aside{
+    background-color: brown;
+    width: 30%;
+}
+
+footer{
+    background-color: blue;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}

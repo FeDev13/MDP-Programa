@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-content: center;  
+    
+}
+
+
+
+.card{
+    background-color: rgb(161, 161, 235);
+    border: medium black solid;
+    margin: 5px;
+}
+
+.container div:nth-child(3){
+    background-color: brown;
+    flex-grow: 2;
+}
+
+
