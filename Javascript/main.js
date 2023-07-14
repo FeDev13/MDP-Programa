@@ -21,7 +21,7 @@ if (user === usuarioGuardado && pass === password) {
   console.log("Usuario o password incorrecto");
 } */
 
-let user = prompt("Ingrese usuario");
+/* let user = prompt("Ingrese usuario");
 let pass = prompt("ingrese password");
 let usuarioGuardado = "Juan";
 
@@ -36,3 +36,55 @@ if (user !== "" && pass !== "") {
 } else {
   console.log("Faltan datos"); // aca viene solo si la primer condicion es true
 }
+ */
+
+//ciclos for, while, do while y switch
+
+/* let cantDeProductos = parseInt(prompt("cantidad de productos a sumar"));
+let precio = 0;
+
+for (let i = 1; i <= cantDeProductos; i++) {
+  let precioIngresado = parseInt(prompt("ingresar el precio" + i));
+  precio = precio + precioIngresado; //precio += precioIngresado
+}
+console.log(precio); */
+
+//ciclo while
+
+/* let ingreso = prompt("Ingrese su producto. Para salir ingrese SALIR");
+
+while (ingreso !== "SALIR") {
+  //ejecuta el codigo
+  console.log("El producto ingresado es " + ingreso);
+  //condicion de salida
+  ingreso = prompt("Ingrese su producto. Para salir ingrese SALIR");
+} */
+
+//ciclo do while
+/* let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 1); */
+
+// switch
+
+/* let mensaje = prompt("ingrese un valor");
+
+switch (mensaje) {
+  case "0":
+  case "1":
+    console.log("cero o uno");
+    break;
+
+  case "2":
+    console.log("dos");
+    break;
+
+  case 3:
+    console.log("tres");
+    break;
+
+  default:
+    console.log("valores deconocidos");
+} */
