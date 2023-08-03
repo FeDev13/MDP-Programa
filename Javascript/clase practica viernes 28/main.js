@@ -1,68 +1,38 @@
-//crear una funcion que tome como parametro un array
-//lo recorra y agregue los elementos a otro array
-//que pueda ya estar conteniendo elementos. La funcion
-//va a devolver un string concatenado
+/* console.log(this);
+//this refiere al objeto que esta llamando a la funcion
+var age = 28;
 
-/* const str = ["hola", "mundo"];
-
-function addToArray(stri) {
-  let newArray = ["digo"];
-  for (let i = 0; i < stri.length; i++) {
-    newArray.push(stri[i]);
-  }
-  return newArray.join(" ");
+function mostrarEdad() {
+  console.log(this.age);
+  console.log(this);
 }
 
-console.log(addToArray(str)); */
+window.mostrarEdad(); //this refiere al objeto que esta llamando
 
-/* const user = {
-  nombre: "Juan",
+var persona = {
   edad: 30,
-  logeado: false
+  mostrarEdad: mostrarEdad,
+  personaAnidada: { edad: 40, mostrarEdad: mostrarEdad },
 };
+persona.mostrarEdad(); //this refiere a persona
+persona.personaAnidada.mostrarEdad(); //this refiere a personaanidada
+ */
+//this es determinado por como una funcion es llamada y no del scope
 
-for (const prop in user) {
-  //console.log(prop);
-  console.log(user[prop]);
-} */
-
-//crear las siguientes clases:
-//Motor: con metodos de arrancar y apagar el motor
-//Ruedas: metodos de inflar y desinflar
-
-class Motor {
-  arrancar;
-  apagar;
-  constructor(arrancar, apagar) {
-    this.arrancar = arrancar;
-    this.apagar = apagar;
-  }
-}
-
-class Rueda {
-  inflar;
-  desinflar;
-  constructor(inflar, desinflar) {
-    this.inflar = inflar;
-    this.desinflar = desinflar;
-  }
-}
-
-class Coche {
-  motor;
-  rueda1;
-  rueda2;
-  constructor() {
-    this.motor = new Motor();
-    this.rueda1 = new Rueda();
-    this.rueda2 = new Rueda();
-  }
-}
-
-const coche = new Coche();
-
-//crear una clase Persona. Sus atributos van a ser nomnre
-//edad y DNI. Construir los siguientes metodos:
-//mostrar(): Muestre los datos de la persona
-//esMayordeEdad(): devuelve un valor booleano si es
-//mayor de edad
+var persona = {
+  edad: 30,
+  saludar1: function () {
+    console.log("Hola 1", this.edad);
+    console.log("Hola 1", this);
+    /* function saludar2() {
+      console.log("Hola 2", this.edad);
+      console.log("Hola 2", this); //este this referencia al obejto windows
+    } */
+    const saludar2 = () => {
+      console.log("Hola2", this.edad);
+      console.log("Hola2", this); //este this referencia al objeto persona
+    };
+    saludar2();
+  },
+};
+persona.saludar1();
