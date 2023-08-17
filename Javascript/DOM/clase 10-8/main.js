@@ -1,4 +1,4 @@
-const parrafo = document.createElement("p");
+/* const parrafo = document.createElement("p");
 
 const node = document.createTextNode("Final");
 
@@ -34,4 +34,4 @@ function multiplicador(arr) {
   let nuevoArray = [];
   arr.forEach((numero) => nuevoArray.push(numero * 2));
   return nuevoArray;
-}
+} */
