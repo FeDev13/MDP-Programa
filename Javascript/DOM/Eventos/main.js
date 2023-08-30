@@ -6,24 +6,29 @@ const input = document.getElementById("input");
   alert("hola");
 }; */
 
-/* button.addEventListener("click", (event) => {
+//event listener
+button.addEventListener("click", (event) => {
   console.log(event.target);
-}); */
+});
 
-/* function saludar() {
+function saludar() {
   alert("hola");
 }
- */
-/* const saludar = () => {
+
+const saludar = () => {
+  //declaracion no funciona al llamarse en el listener
   alert("hola");
-}; */
-/* button.addEventListener("dblclick", () => {
+};
+
+//evento del mouse
+button.addEventListener("dblclick", () => {
   console.log("mouse click");
 });
 
+//evento de teclado
 input.addEventListener("keypress", () => {
   console.log("datos ingresados");
-}); */
+});
 
 //evento change
 
