@@ -1,4 +1,4 @@
-/* let promise1 = new Promise(function (resolve, reject) {
+let promise1 = new Promise(function (resolve, reject) {
   //codigo ejecutor
 });
 
@@ -7,32 +7,34 @@ let promise2 = new Promise(function (resolve, reject) {
 });
 
 promise1.then(
-    result => alert(result),
-    error => alert(error)
-) */
+  (result) => alert(result),
+  (error) => alert(error)
+);
 
-/* const url = "https://pokeapi.co/api/v2/pokemon/ditto"; */
+const url = "https://pokeapi.co/api/v2/pokemon/ditto";
 
 console.log(1);
 
-/* fetch(url)
-  .then((res) => res.json())
+//-----------ejemplo con fetch------------
+
+fetch(url)
+  .then((res) => res.json()) //la promesa esta pendiente por eso resuelvo con otro then para obtener un objeto
   .then((pokemon) => {
+    //objeto
     const pokeContainer = document.getElementById("container");
     pokeContainer.innerHTML = `<h3>${pokemon.names}</h3>
                                 <img src="${pokemon.sprites.front_default}"/>
     `;
   })
-  .catch((err) => console.log("oops")); 
+  .catch((err) => console.log("oops"));
 
 console.log(3);
- */
 
-/* const url = "https://jsonplaceholder.typicode.com/users";
+const url2 = "https://jsonplaceholder.typicode.com/users";
 const container = document.getElementById("userContainer");
 const list = document.createElement("ul");
 
-fetch(url)
+fetch(url2)
   .then((res) => res.json())
   .then((users) => {
     users.forEach((user) => {
@@ -42,21 +44,22 @@ fetch(url)
     });
     container.appendChild(list);
   });
- */
 
-/* async function pedirUsers(params) {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+//---------async await--------
+
+async function pedirUsers(params) {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users"); //await deber ir en una funcion asyn y espera a que se resuela la promesa antes de ejecutar el console.log
   console.log(res);
 }
 pedirUsers();
- */
-/* const pedirUsers = async () => {
+
+const pedirUsers = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
 };
- */
 
 const cargarUsers = async () => {
   try {
+    //resulevo que hacer con la promesa en caso de resolverse bien
     const url = "https://jsonplaceholder.typicode.com/todos/1";
     const res = await fetch(url);
     if (res.ok) {
@@ -66,6 +69,7 @@ const cargarUsers = async () => {
       console.log(res.status);
     }
   } catch (error) {
+    //en caso de error
     console.log(error);
   }
 };
