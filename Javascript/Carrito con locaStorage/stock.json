@@ -1,0 +1,29 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "God of War",
+    "Descripcion": "Fisico",
+    "Precio": 150,
+    "Foto": "https://gorilagames.com/img/Public/1019-producto-god-of-war-9234.jpg",
+    "Categoria": "Playstation 4",
+    "Stock": 10
+  },
+  {
+    "Id": 2,
+    "Nombre": "Resident Evil 2",
+    "Descripcion": "Fisico",
+    "Precio": 300,
+    "Foto": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png",
+    "Categoria": "Playstation 4",
+    "Stock": 10
+  },
+  {
+    "Id": 3,
+    "Nombre": "Pokemon Sword",
+    "Descripcion": "Digital",
+    "Precio": 500,
+    "Foto": "https://m.media-amazon.com/images/M/MV5BNmQyN2MzMWUtMGI4NS00NmRlLWE5MzYtYjRiMmU4ODI1ZDNlXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg",
+    "Categoria": "Nintendo Switch",
+    "Stock": 0
+  }
+]
