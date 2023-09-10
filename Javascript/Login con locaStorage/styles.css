@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.login-wrap {
+  height: 100vh;
+}
+
+input {
+  color: black;
+  border-radius: 4px;
+  margin-top: 8px;
+}

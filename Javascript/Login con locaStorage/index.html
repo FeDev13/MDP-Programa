@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body class="flex justify-center bg-black h-full">
+    <div class="login-wrap bg-black text-white w-1/2">
+      <div class="login-html">
+        <input
+          id="tab-1"
+          type="radio"
+          name="tab"
+          class="sign-in"
+          checked
+        /><label for="tab-1" class="tab">Iniciar Sesión</label>
+        <input id="tab-2" type="radio" name="tab" class="sign-up" /><label
+          for="tab-2"
+          class="tab"
+          >Registrarse</label
+        >
+        <div class="login-form bg-red-400 p-5 rounded-md mt-10">
+          <div class="sign-in-htm">
+            <div class="group flex justify-between w-1/2">
+              <label for="user" class="label">Usuario</label>
+              <input id="user" type="text" class="input mb-2" />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <label for="pass" class="label">Contraseña</label>
+              <input
+                id="pass"
+                type="password"
+                class="input"
+                data-type="password"
+              />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <input id="check" type="checkbox" class="check" checked />
+              <label for="check"
+                ><span class="icon"></span> Mantenerme conectado</label
+              >
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <input
+                type="submit"
+                id="ingreso"
+                class="button"
+                value="Ingresar"
+              />
+            </div>
+            <div class="hr"></div>
+            <div class="foot-lnk">
+              <a href="#forgot">Olvidó su contraseña?</a>
+            </div>
+          </div>
+          <div class="sign-up-htm">
+            <div class="group flex justify-between w-1/2">
+              <label for="user" class="label">Usuario</label>
+              <input id="userRegis" type="text" class="input" />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <label for="pass" class="label">Contraseña</label>
+              <input
+                id="passRegis"
+                type="password"
+                class="input"
+                data-type="password"
+              />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <label for="pass" class="label">Repetir contraseña</label>
+              <input
+                id="rePassRegis"
+                type="password"
+                class="input"
+                data-type="password"
+              />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <label for="pass" class="label">Email</label>
+              <input id="email" type="text" class="input" />
+            </div>
+            <div class="group flex justify-between w-1/2">
+              <input
+                type="submit"
+                id="registro"
+                class="button"
+                value="Registrarse"
+              />
+            </div>
+            <div class="hr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="titulo"></div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
